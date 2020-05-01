@@ -28,7 +28,7 @@ class TabbedActivity : AppCompatActivity() {
         windowManager.defaultDisplay.getMetrics(displayMetrics)
         val height = displayMetrics.heightPixels
 
-        window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, (height * .75).toInt())
+        window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, (height * .5).toInt())
     }
 
     private fun initUi() {
