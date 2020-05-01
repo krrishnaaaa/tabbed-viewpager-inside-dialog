@@ -2,7 +2,7 @@ package com.pcsalt.example.tabbeddialog
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openTabbedDialog(view: View) {
-        startActivity(Intent(MainActivity@ this, TabbedActivity::class.java))
+        startActivity(Intent(this@MainActivity, TabbedActivity::class.java))
     }
 }
